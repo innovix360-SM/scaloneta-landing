@@ -56,6 +56,7 @@
     .nav-links { display: flex; gap: 28px; }
     .nav-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: color .2s; }
     .nav-links a:hover { color: var(--celeste); }
+    .nav-right { display: flex; align-items: center; gap: 12px; }
     .nav-buy {
       background: var(--celeste); color: var(--dark);
       padding: 9px 22px; border-radius: 8px;
@@ -63,6 +64,19 @@
       text-decoration: none; transition: background .2s, transform .1s;
     }
     .nav-buy:hover { background: #5a9fd4; transform: translateY(-1px); }
+
+    /* ── LANG TOGGLE ── */
+    .lang-btn {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px; padding: 7px 14px;
+      cursor: pointer; font-size: 0.85rem; font-weight: 700;
+      color: rgba(255,255,255,0.8);
+      transition: border-color .2s, color .2s;
+    }
+    .lang-btn:hover { border-color: var(--celeste); color: var(--celeste); }
+    .lang-btn .lang-flag { font-size: 1rem; }
 
     /* ── HERO ── */
     #hero {
@@ -392,30 +406,36 @@
     <span>ScalonetaCoin</span>
   </div>
   <div class="nav-links">
-    <a href="#pasion">La Pasión</a>
-    <a href="#dioses">Los Ídolos</a>
-    <a href="#contador">Comunidad</a>
-    <a href="#comprar">Comprar</a>
+    <a href="#pasion" data-i18n="nav.pasion">La Pasión</a>
+    <a href="#dioses" data-i18n="nav.dioses">Los Ídolos</a>
+    <a href="#contador" data-i18n="nav.comunidad">Comunidad</a>
+    <a href="#comprar" data-i18n="nav.comprar">Comprar</a>
   </div>
-  <a class="nav-buy" href="#comprar">Comprar $SCALONETA ⚽</a>
+  <div class="nav-right">
+    <button class="lang-btn" onclick="toggleLang()" id="lang-btn">
+      <span class="lang-flag">🇺🇸</span>
+      <span id="lang-label">EN</span>
+    </button>
+    <a class="nav-buy" href="#comprar" data-i18n="nav.buy">Comprar $SCALONETA ⚽</a>
+  </div>
 </nav>
 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-badge">
     <span></span>
-    Live en Solana · pump.fun
+    <span data-i18n="hero.badge">Live en Solana · pump.fun</span>
   </div>
   <img src="logo.png" alt="ScalonetaCoin Logo" class="hero-logo" />
   <h1 class="hero-title">
     <span class="celeste">La</span> Scaloneta<br />
     <span class="oro">Coin</span>
   </h1>
-  <p class="hero-sub">El meme coin de los campeones del mundo 🇦🇷</p>
+  <p class="hero-sub" data-i18n="hero.sub">El meme coin de los campeones del mundo 🇦🇷</p>
   <div class="ticker-pill">$SCALONETA · Solana</div>
   <div class="hero-ctas">
-    <a href="#comprar" class="btn-primary">⚽ Comprar $SCALONETA</a>
-    <a href="#contador" class="btn-secondary">Unirme a la comunidad</a>
+    <a href="#comprar" class="btn-primary" data-i18n="hero.cta1">⚽ Comprar $SCALONETA</a>
+    <a href="#contador" class="btn-secondary" data-i18n="hero.cta2">Unirme a la comunidad</a>
   </div>
   <div class="scroll-hint">↓ scroll</div>
 </section>
@@ -425,20 +445,20 @@
 <!-- PASIÓN -->
 <section id="pasion">
   <div class="section-inner">
-    <span class="section-tag">🇦🇷 La Pasión</span>
-    <h2 class="section-title">No es fútbol.<br />Es una religión.</h2>
-    <p class="section-desc">
+    <span class="section-tag" data-i18n="pasion.tag">🇦🇷 La Pasión</span>
+    <h2 class="section-title" data-i18n="pasion.title">No es fútbol.<br />Es una religión.</h2>
+    <p class="section-desc" data-i18n="pasion.desc">
       Hay 45 millones de argentinos. Y 500 millones de personas en el mundo que sienten que lo son cuando la Selección juega.
     </p>
 
-    <div class="pasion-quote">
+    <div class="pasion-quote" data-i18n="pasion.quote">
       "El fútbol argentino no se explica.
       <em>Se siente en el pecho,</em>
       se llora con orgullo,
       y se vive <strong>sin pedir permiso.</strong>"
     </div>
 
-    <p class="section-desc" style="margin-bottom: 0;">
+    <p class="section-desc" style="margin-bottom: 0;" data-i18n="pasion.desc2">
       Desde los potreros de Rosario hasta los estadios del mundo, el hincha argentino lleva en el ADN algo que ningún otro pueblo tiene:
       la capacidad de convertir once jugadores en un milagro colectivo. Dos mundiales, glorias inmortales, y una locura hermosa que nos une a todos sin importar donde estemos.
     </p>
@@ -446,18 +466,18 @@
     <div class="pasion-grid">
       <div class="pasion-card">
         <div class="icon">🎵</div>
-        <h3>El Canto que Mueve Estadios</h3>
-        <p>Los hinchas argentinos inventaron el aguante. Las hinchadas más ruidosas del mundo. Cada gol es una explosión colectiva que se siente en el alma.</p>
+        <h3 data-i18n="pasion.card1.title">El Canto que Mueve Estadios</h3>
+        <p data-i18n="pasion.card1.desc">Los hinchas argentinos inventaron el aguante. Las hinchadas más ruidosas del mundo. Cada gol es una explosión colectiva que se siente en el alma.</p>
       </div>
       <div class="pasion-card">
         <div class="icon">🌍</div>
-        <h3>Una Comunidad Global</h3>
-        <p>De Buenos Aires a Tokyo, de Madrid a Nueva York — el celeste y blanco cruza fronteras y une a millones bajo la misma bandera.</p>
+        <h3 data-i18n="pasion.card2.title">Una Comunidad Global</h3>
+        <p data-i18n="pasion.card2.desc">De Buenos Aires a Tokyo, de Madrid a Nueva York — el celeste y blanco cruza fronteras y une a millones bajo la misma bandera.</p>
       </div>
       <div class="pasion-card">
         <div class="icon">💙</div>
-        <h3>Identidad que Trasciende</h3>
-        <p>Ser hincha de Argentina no es una elección. Es un destino. Se hereda, se contagia y se lleva toda la vida sin arrepentirse.</p>
+        <h3 data-i18n="pasion.card3.title">Identidad que Trasciende</h3>
+        <p data-i18n="pasion.card3.desc">Ser hincha de Argentina no es una elección. Es un destino. Se hereda, se contagia y se lleva toda la vida sin arrepentirse.</p>
       </div>
     </div>
   </div>
@@ -468,16 +488,16 @@
 <!-- DIOSES -->
 <section id="dioses">
   <div class="section-inner">
-    <span class="section-tag">⭐ Los Ídolos</span>
-    <h2 class="section-title">Los Dioses<br />del Fútbol</h2>
-    <p class="section-desc">Tres hombres que convirtieron una camiseta azul y blanca en el símbolo más poderoso del deporte mundial.</p>
+    <span class="section-tag" data-i18n="dioses.tag">⭐ Los Ídolos</span>
+    <h2 class="section-title" data-i18n="dioses.title">Los Dioses<br />del Fútbol</h2>
+    <p class="section-desc" data-i18n="dioses.desc">Tres hombres que convirtieron una camiseta azul y blanca en el símbolo más poderoso del deporte mundial.</p>
 
     <div class="dioses-grid">
       <div class="dios-card maradona">
         <span class="dios-emoji">👑</span>
         <div class="dios-nombre">Diego Maradona</div>
-        <div class="dios-apodo">El Dios del Fútbol · D10S</div>
-        <p class="dios-desc">
+        <div class="dios-apodo" data-i18n="maradona.apodo">El Dios del Fútbol · D10S</div>
+        <p class="dios-desc" data-i18n="maradona.desc">
           Hijo de Villa Fiorito que se convirtió en el mejor jugador de todos los tiempos. La mano de Dios, el gol del siglo, México 86.
           Diego no jugaba al fútbol — hacía magia. Eterno.
         </p>
@@ -488,7 +508,7 @@
         <span class="dios-emoji">🐐</span>
         <div class="dios-nombre">Lionel Messi</div>
         <div class="dios-apodo">La Pulga · GOAT</div>
-        <p class="dios-desc">
+        <p class="dios-desc" data-i18n="messi.desc">
           El niño de Rosario que pasó por el quirófano a los 11 años y terminó siendo el mejor de la historia. Qatar 2022 fue su obra maestra.
           8 Balones de Oro. Una Copa del Mundo. Inmortal.
         </p>
@@ -498,8 +518,8 @@
       <div class="dios-card scaloni">
         <span class="dios-emoji">🧠</span>
         <div class="dios-nombre">Lionel Scaloni</div>
-        <div class="dios-apodo">El Arquitecto · La Scaloneta</div>
-        <p class="dios-desc">
+        <div class="dios-apodo" data-i18n="scaloni.apodo">El Arquitecto · La Scaloneta</div>
+        <p class="dios-desc" data-i18n="scaloni.desc">
           El técnico que nadie apostaba y que construyó el equipo más unido de la historia argentina. Sin estrellas de ego, con once guerreros.
           Convirtió un sueño en realidad.
         </p>
@@ -514,19 +534,19 @@
 <!-- CONTADOR -->
 <section id="contador">
   <div class="section-inner">
-    <span class="section-tag">🌎 La Comunidad</span>
-    <h2 class="section-title">Hinchas de Argentina<br />en todo el mundo</h2>
-    <p class="section-desc" style="margin: 0 auto 0; text-align: center;">
+    <span class="section-tag" data-i18n="contador.tag">🌎 La Comunidad</span>
+    <h2 class="section-title" data-i18n="contador.title">Hinchas de Argentina<br />en todo el mundo</h2>
+    <p class="section-desc" style="margin: 0 auto 0; text-align: center;" data-i18n="contador.desc">
       Somos millones. Y ahora también somos cripto.
     </p>
 
     <div class="counter-number" id="counter-display">0</div>
-    <div class="counter-label">hinchas y holders de $SCALONETA</div>
+    <div class="counter-label" data-i18n="contador.label">hinchas y holders de $SCALONETA</div>
 
     <button class="join-btn" id="join-btn" onclick="joinTribe()">
-      🇦🇷 Unirme a la Scaloneta
+      <span data-i18n="contador.joinBtn">🇦🇷 Unirme a la Scaloneta</span>
     </button>
-    <div class="counter-sublabel" id="counter-sub">Cada hincha cuenta. Seás de donde seás.</div>
+    <div class="counter-sublabel" id="counter-sub" data-i18n="contador.sublabel">Cada hincha cuenta. Seás de donde seás.</div>
   </div>
 </section>
 
@@ -534,29 +554,29 @@
 <section id="tokenomics">
   <div class="section-inner">
     <span class="section-tag">📊 Tokenomics</span>
-    <h2 class="section-title">Simple como<br />el fútbol bien jugado</h2>
-    <p class="section-desc">Sin trampa ni cartón. Supply fijo, sin reservas de equipo, sin vesting. Todo para la comunidad.</p>
+    <h2 class="section-title" data-i18n="tknm.title">Simple como<br />el fútbol bien jugado</h2>
+    <p class="section-desc" data-i18n="tknm.desc">Sin trampa ni cartón. Supply fijo, sin reservas de equipo, sin vesting. Todo para la comunidad.</p>
 
     <div class="tknm-grid">
       <div class="tknm-card">
         <div class="tknm-val">1B</div>
-        <div class="tknm-key">Supply Total</div>
+        <div class="tknm-key" data-i18n="tknm.supply">Supply Total</div>
       </div>
       <div class="tknm-card">
         <div class="tknm-val">100%</div>
-        <div class="tknm-key">Liquidez en pump.fun</div>
+        <div class="tknm-key" data-i18n="tknm.liquidity">Liquidez en pump.fun</div>
       </div>
       <div class="tknm-card">
         <div class="tknm-val">0%</div>
-        <div class="tknm-key">Reserva del equipo</div>
+        <div class="tknm-key" data-i18n="tknm.team">Reserva del equipo</div>
       </div>
       <div class="tknm-card">
         <div class="tknm-val">0%</div>
-        <div class="tknm-key">Impuesto por tx</div>
+        <div class="tknm-key" data-i18n="tknm.tax">Impuesto por tx</div>
       </div>
       <div class="tknm-card">
         <div class="tknm-val">SOL</div>
-        <div class="tknm-key">Blockchain</div>
+        <div class="tknm-key" data-i18n="tknm.chain">Blockchain</div>
       </div>
     </div>
   </div>
@@ -565,30 +585,30 @@
 <!-- COMPRAR -->
 <section id="comprar">
   <div class="section-inner">
-    <span class="section-tag">🛒 Cómo Comprar</span>
-    <h2 class="section-title">Cuatro pasos.<br />Para siempre Scaloneta.</h2>
-    <p class="section-desc">Tan fácil como gritar un gol.</p>
+    <span class="section-tag" data-i18n="buy.tag">🛒 Cómo Comprar</span>
+    <h2 class="section-title" data-i18n="buy.title">Cuatro pasos.<br />Para siempre Scaloneta.</h2>
+    <p class="section-desc" data-i18n="buy.desc">Tan fácil como gritar un gol.</p>
 
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
-        <h3>Creá tu wallet Phantom</h3>
-        <p>Descargá <a href="https://phantom.app" target="_blank">Phantom</a> o Solflare. Es gratis, en 2 minutos. Guardá tu seed phrase en papel.</p>
+        <h3 data-i18n="buy.step1.title">Creá tu wallet Phantom</h3>
+        <p data-i18n="buy.step1.desc">Descargá <a href="https://phantom.app" target="_blank">Phantom</a> o Solflare. Es gratis, en 2 minutos. Guardá tu seed phrase en papel.</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <h3>Comprá SOL</h3>
-        <p>Comprá Solana (SOL) en Binance, Coinbase o cualquier exchange. Transferilo a tu wallet de Phantom.</p>
+        <h3 data-i18n="buy.step2.title">Comprá SOL</h3>
+        <p data-i18n="buy.step2.desc">Comprá Solana (SOL) en Binance, Coinbase o cualquier exchange. Transferilo a tu wallet de Phantom.</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <h3>Conectate a pump.fun</h3>
-        <p>Entrá a <a href="https://pump.fun" target="_blank">pump.fun</a>, conectá tu wallet y buscá <strong>$SCALONETA</strong> o La Scaloneta.</p>
+        <h3 data-i18n="buy.step3.title">Conectate a pump.fun</h3>
+        <p data-i18n="buy.step3.desc">Entrá a <a href="https://pump.fun" target="_blank">pump.fun</a>, conectá tu wallet y buscá <strong>$SCALONETA</strong> o La Scaloneta.</p>
       </div>
       <div class="step">
         <div class="step-num">4</div>
-        <h3>¡Comprá y aguantá!</h3>
-        <p>Elegí cuánto SOL querés invertir, confirmá la tx y bienvenido a la Scaloneta cripto. ¡Vamos carajo!</p>
+        <h3 data-i18n="buy.step4.title">¡Comprá y aguantá!</h3>
+        <p data-i18n="buy.step4.desc">Elegí cuánto SOL querés invertir, confirmá la tx y bienvenido a la Scaloneta cripto. ¡Vamos carajo!</p>
       </div>
     </div>
   </div>
@@ -603,7 +623,7 @@
     <a href="https://t.me/ScalonetaCoin" target="_blank">Telegram</a>
     <a href="https://worldprode.com" target="_blank">WorldProde</a>
   </div>
-  <p class="footer-disclaimer">
+  <p class="footer-disclaimer" data-i18n="footer.disclaimer">
     $SCALONETA es un meme coin creado por y para fanáticos del fútbol argentino.
     No tiene utilidad financiera garantizada. Invertí solo lo que estés dispuesto a perder.
     Este sitio no es asesoramiento financiero.
@@ -614,6 +634,151 @@
 <div class="confetti-wrap" id="confetti-wrap"></div>
 
 <script>
+  // ── TRANSLATIONS ───────────────────────────────────────────────
+  const T = {
+    es: {
+      'nav.pasion':         'La Pasión',
+      'nav.dioses':         'Los Ídolos',
+      'nav.comunidad':      'Comunidad',
+      'nav.comprar':        'Comprar',
+      'nav.buy':            'Comprar $SCALONETA ⚽',
+      'hero.badge':         'Live en Solana · pump.fun',
+      'hero.sub':           'El meme coin de los campeones del mundo 🇦🇷',
+      'hero.cta1':          '⚽ Comprar $SCALONETA',
+      'hero.cta2':          'Unirme a la comunidad',
+      'pasion.tag':         '🇦🇷 La Pasión',
+      'pasion.title':       'No es fútbol.<br />Es una religión.',
+      'pasion.desc':        'Hay 45 millones de argentinos. Y 500 millones de personas en el mundo que sienten que lo son cuando la Selección juega.',
+      'pasion.quote':       '"El fútbol argentino no se explica. <em>Se siente en el pecho,</em> se llora con orgullo, y se vive <strong>sin pedir permiso.</strong>"',
+      'pasion.desc2':       'Desde los potreros de Rosario hasta los estadios del mundo, el hincha argentino lleva en el ADN algo que ningún otro pueblo tiene: la capacidad de convertir once jugadores en un milagro colectivo. Dos mundiales, glorias inmortales, y una locura hermosa que nos une a todos sin importar donde estemos.',
+      'pasion.card1.title': 'El Canto que Mueve Estadios',
+      'pasion.card1.desc':  'Los hinchas argentinos inventaron el aguante. Las hinchadas más ruidosas del mundo. Cada gol es una explosión colectiva que se siente en el alma.',
+      'pasion.card2.title': 'Una Comunidad Global',
+      'pasion.card2.desc':  'De Buenos Aires a Tokyo, de Madrid a Nueva York — el celeste y blanco cruza fronteras y une a millones bajo la misma bandera.',
+      'pasion.card3.title': 'Identidad que Trasciende',
+      'pasion.card3.desc':  'Ser hincha de Argentina no es una elección. Es un destino. Se hereda, se contagia y se lleva toda la vida sin arrepentirse.',
+      'dioses.tag':         '⭐ Los Ídolos',
+      'dioses.title':       'Los Dioses<br />del Fútbol',
+      'dioses.desc':        'Tres hombres que convirtieron una camiseta azul y blanca en el símbolo más poderoso del deporte mundial.',
+      'maradona.apodo':     'El Dios del Fútbol · D10S',
+      'maradona.desc':      'Hijo de Villa Fiorito que se convirtió en el mejor jugador de todos los tiempos. La mano de Dios, el gol del siglo, México 86. Diego no jugaba al fútbol — hacía magia. Eterno.',
+      'messi.desc':         'El niño de Rosario que pasó por el quirófano a los 11 años y terminó siendo el mejor de la historia. Qatar 2022 fue su obra maestra. 8 Balones de Oro. Una Copa del Mundo. Inmortal.',
+      'scaloni.apodo':      'El Arquitecto · La Scaloneta',
+      'scaloni.desc':       'El técnico que nadie apostaba y que construyó el equipo más unido de la historia argentina. Sin estrellas de ego, con once guerreros. Convirtió un sueño en realidad.',
+      'contador.tag':       '🌎 La Comunidad',
+      'contador.title':     'Hinchas de Argentina<br />en todo el mundo',
+      'contador.desc':      'Somos millones. Y ahora también somos cripto.',
+      'contador.label':     'hinchas y holders de $SCALONETA',
+      'contador.joinBtn':   '🇦🇷 Unirme a la Scaloneta',
+      'contador.sublabel':  'Cada hincha cuenta. Seás de donde seás.',
+      'contador.joined':    '🏆 ¡Bienvenido a la Scaloneta!',
+      'contador.alreadyJoined': '🏆 Ya sos de la Scaloneta!',
+      'contador.joinedSub': '¡Ya sos parte! Compartí con otros hinchas 🇦🇷',
+      'tknm.title':         'Simple como<br />el fútbol bien jugado',
+      'tknm.desc':          'Sin trampa ni cartón. Supply fijo, sin reservas de equipo, sin vesting. Todo para la comunidad.',
+      'tknm.supply':        'Supply Total',
+      'tknm.liquidity':     'Liquidez en pump.fun',
+      'tknm.team':          'Reserva del equipo',
+      'tknm.tax':           'Impuesto por tx',
+      'tknm.chain':         'Blockchain',
+      'buy.tag':            '🛒 Cómo Comprar',
+      'buy.title':          'Cuatro pasos.<br />Para siempre Scaloneta.',
+      'buy.desc':           'Tan fácil como gritar un gol.',
+      'buy.step1.title':    'Creá tu wallet Phantom',
+      'buy.step1.desc':     'Descargá <a href="https://phantom.app" target="_blank">Phantom</a> o Solflare. Es gratis, en 2 minutos. Guardá tu seed phrase en papel.',
+      'buy.step2.title':    'Comprá SOL',
+      'buy.step2.desc':     'Comprá Solana (SOL) en Binance, Coinbase o cualquier exchange. Transferilo a tu wallet de Phantom.',
+      'buy.step3.title':    'Conectate a pump.fun',
+      'buy.step3.desc':     'Entrá a <a href="https://pump.fun" target="_blank">pump.fun</a>, conectá tu wallet y buscá <strong>$SCALONETA</strong> o La Scaloneta.',
+      'buy.step4.title':    '¡Comprá y aguantá!',
+      'buy.step4.desc':     'Elegí cuánto SOL querés invertir, confirmá la tx y bienvenido a la Scaloneta cripto. ¡Vamos carajo!',
+      'footer.disclaimer':  '$SCALONETA es un meme coin creado por y para fanáticos del fútbol argentino. No tiene utilidad financiera garantizada. Invertí solo lo que estés dispuesto a perder. Este sitio no es asesoramiento financiero. ScalonetaCoin no está afiliado con AFA, FIFA, ni ningún jugador o cuerpo técnico.',
+    },
+    en: {
+      'nav.pasion':         'The Passion',
+      'nav.dioses':         'The Icons',
+      'nav.comunidad':      'Community',
+      'nav.comprar':        'Buy',
+      'nav.buy':            'Buy $SCALONETA ⚽',
+      'hero.badge':         'Live on Solana · pump.fun',
+      'hero.sub':           'The meme coin of the world champions 🇦🇷',
+      'hero.cta1':          '⚽ Buy $SCALONETA',
+      'hero.cta2':          'Join the community',
+      'pasion.tag':         '🇦🇷 The Passion',
+      'pasion.title':       "It's not football.<br />It's a religion.",
+      'pasion.desc':        'There are 45 million Argentines. And 500 million people around the world who feel like one when the national team plays.',
+      'pasion.quote':       '"Argentine football cannot be explained. <em>You feel it in your chest,</em> you cry with pride, and you live it <strong>without asking permission.</strong>"',
+      'pasion.desc2':       'From the street courts of Rosario to the stadiums of the world, the Argentine fan carries something in their DNA that no other people have: the ability to turn eleven players into a collective miracle. Two World Cups, immortal glories, and a beautiful madness that unites us all no matter where we are.',
+      'pasion.card1.title': 'The Chant that Moves Stadiums',
+      'pasion.card1.desc':  'Argentine fans invented the art of support. The loudest crowds in the world. Every goal is a collective explosion felt in the soul.',
+      'pasion.card2.title': 'A Global Community',
+      'pasion.card2.desc':  'From Buenos Aires to Tokyo, from Madrid to New York — the light blue and white crosses borders and unites millions under the same flag.',
+      'pasion.card3.title': 'An Identity that Transcends',
+      'pasion.card3.desc':  "Being an Argentina fan is not a choice. It's a destiny. It's inherited, it spreads, and it stays with you for life — no regrets.",
+      'dioses.tag':         '⭐ The Icons',
+      'dioses.title':       'The Gods<br />of Football',
+      'dioses.desc':        'Three men who turned a blue and white shirt into the most powerful symbol in world sport.',
+      'maradona.apodo':     'The God of Football · D10S',
+      'maradona.desc':      'A kid from Villa Fiorito who became the greatest player of all time. The Hand of God, the Goal of the Century, Mexico 86. Diego did not play football — he performed magic. Eternal.',
+      'messi.desc':         'The boy from Rosario who had surgery at age 11 and ended up being the best in history. Qatar 2022 was his masterpiece. 8 Ballon d\'Or. One World Cup. Immortal.',
+      'scaloni.apodo':      'The Architect · La Scaloneta',
+      'scaloni.desc':       'The coach nobody believed in, who built the most united team in Argentine history. No egos, just eleven warriors. He turned a dream into reality.',
+      'contador.tag':       '🌎 The Community',
+      'contador.title':     'Argentina Fans<br />Around the World',
+      'contador.desc':      'We are millions. And now we are also crypto.',
+      'contador.label':     'fans and $SCALONETA holders',
+      'contador.joinBtn':   '🇦🇷 Join the Scaloneta',
+      'contador.sublabel':  'Every fan counts. Wherever you are.',
+      'contador.joined':    '🏆 Welcome to the Scaloneta!',
+      'contador.alreadyJoined': '🏆 You are already Scaloneta!',
+      'contador.joinedSub': "You're in! Share with other fans 🇦🇷",
+      'tknm.title':         'Simple like<br />beautiful football',
+      'tknm.desc':          'No tricks, no traps. Fixed supply, no team reserves, no vesting. Everything for the community.',
+      'tknm.supply':        'Total Supply',
+      'tknm.liquidity':     'Liquidity on pump.fun',
+      'tknm.team':          'Team Reserve',
+      'tknm.tax':           'Transaction Tax',
+      'tknm.chain':         'Blockchain',
+      'buy.tag':            '🛒 How to Buy',
+      'buy.title':          'Four steps.<br />Forever Scaloneta.',
+      'buy.desc':           'As easy as screaming a goal.',
+      'buy.step1.title':    'Create your Phantom wallet',
+      'buy.step1.desc':     'Download <a href="https://phantom.app" target="_blank">Phantom</a> or Solflare. Free, done in 2 minutes. Write down your seed phrase on paper.',
+      'buy.step2.title':    'Buy SOL',
+      'buy.step2.desc':     'Buy Solana (SOL) on Binance, Coinbase or any exchange. Transfer it to your Phantom wallet.',
+      'buy.step3.title':    'Connect to pump.fun',
+      'buy.step3.desc':     'Go to <a href="https://pump.fun" target="_blank">pump.fun</a>, connect your wallet and search for <strong>$SCALONETA</strong> or La Scaloneta.',
+      'buy.step4.title':    'Buy and hold!',
+      'buy.step4.desc':     'Choose how much SOL to invest, confirm the tx and welcome to the crypto Scaloneta. Let\'s go!',
+      'footer.disclaimer':  '$SCALONETA is a meme coin created by and for Argentine football fans. No financial utility is guaranteed. Only invest what you can afford to lose. This site is not financial advice. ScalonetaCoin is not affiliated with AFA, FIFA, or any player or coaching staff.',
+    }
+  };
+
+  let currentLang = localStorage.getItem('scaloni_lang') || 'es';
+
+  function applyLang(lang) {
+    const dict = T[lang];
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key] !== undefined) el.innerHTML = dict[key];
+    });
+    document.documentElement.lang = lang;
+    const btn = document.getElementById('lang-btn');
+    if (lang === 'es') {
+      btn.innerHTML = '<span class="lang-flag">🇺🇸</span><span>EN</span>';
+    } else {
+      btn.innerHTML = '<span class="lang-flag">🇦🇷</span><span>ES</span>';
+    }
+  }
+
+  function toggleLang() {
+    currentLang = currentLang === 'es' ? 'en' : 'es';
+    localStorage.setItem('scaloni_lang', currentLang);
+    applyLang(currentLang);
+  }
+
+  applyLang(currentLang);
+
   // ── STARS ──────────────────────────────────────────────────────
   const canvas = document.getElementById('stars-canvas');
   const ctx = canvas.getContext('2d');
@@ -649,11 +814,9 @@
   requestAnimationFrame(drawStars);
 
   // ── CONTADOR ───────────────────────────────────────────────────
-  // Base: fans mundiales de Argentina estimados
-  // Crece ~3 por segundo (simulando gente uniéndose)
   const BASE_COUNT   = 47_382_150;
   const START_TIME   = new Date('2026-07-08T00:00:00Z').getTime();
-  const GROWTH_RATE  = 3; // por segundo
+  const GROWTH_RATE  = 3;
 
   function getCurrentCount() {
     const elapsed = (Date.now() - START_TIME) / 1000;
@@ -682,16 +845,18 @@
   // ── JOIN ───────────────────────────────────────────────────────
   function joinTribe() {
     const btn = document.getElementById('join-btn');
+    const sub = document.getElementById('counter-sub');
+    const lang = currentLang;
     if (localStorage.getItem('scaloni_joined_once')) {
-      btn.textContent = '🏆 Ya sos de la Scaloneta!';
+      btn.querySelector('[data-i18n]').textContent = T[lang]['contador.alreadyJoined'];
       return;
     }
     localStorage.setItem('scaloni_joined', '1000');
     localStorage.setItem('scaloni_joined_once', '1');
     animCurrent += 1000;
     btn.classList.add('joined');
-    btn.textContent = '🏆 ¡Bienvenido a la Scaloneta!';
-    document.getElementById('counter-sub').textContent = '¡Ya sos parte! Compartí con otros hinchas 🇦🇷';
+    btn.querySelector('[data-i18n]').textContent = T[lang]['contador.joined'];
+    sub.textContent = T[lang]['contador.joinedSub'];
     launchConfetti();
   }
 
