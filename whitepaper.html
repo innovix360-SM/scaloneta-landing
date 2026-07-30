@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>$SCALONETA — Whitepaper</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #020818;
+    color: #e0e6f0;
+    line-height: 1.7;
+  }
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  /* Header */
+  .wp-header {
+    text-align: center;
+    padding: 48px 0 40px;
+    border-bottom: 1px solid #1a3060;
+    margin-bottom: 48px;
+  }
+  .wp-header h1 {
+    font-size: 2.4rem;
+    color: #FFD700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .wp-header h3 {
+    color: #6a9fd8;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  /* Headings */
+  h1, h2 { color: #FFD700; }
+  h2 {
+    font-size: 1.4rem;
+    margin: 48px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #1a3060;
+  }
+  h3 {
+    color: #1a8fff;
+    font-size: 1.1rem;
+    margin: 28px 0 10px;
+  }
+  /* Paragraphs & lists */
+  p { margin-bottom: 14px; color: #c8d8ee; }
+  ul, ol { margin: 0 0 16px 24px; color: #c8d8ee; }
+  li { margin-bottom: 6px; }
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95rem;
+  }
+  th {
+    background: #0d1f3c;
+    color: #FFD700;
+    padding: 10px 14px;
+    text-align: left;
+    border: 1px solid #1a3060;
+  }
+  td {
+    padding: 9px 14px;
+    border: 1px solid #1a3060;
+    color: #c8d8ee;
+  }
+  tr:nth-child(even) td { background: #071228; }
+  /* Code */
+  code {
+    background: #071228;
+    color: #1a8fff;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.88em;
+    word-break: break-all;
+  }
+  /* Blockquote / callouts */
+  blockquote {
+    border-left: 3px solid #FFD700;
+    margin: 20px 0;
+    padding: 12px 20px;
+    background: #071228;
+    border-radius: 0 8px 8px 0;
+    color: #c8d8ee;
+  }
+  /* Links */
+  a { color: #1a8fff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  /* HR */
+  hr {
+    border: none;
+    border-top: 1px solid #1a3060;
+    margin: 40px 0;
+  }
+  /* Footer */
+  .wp-footer {
+    text-align: center;
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid #1a3060;
+    color: #6a9fd8;
+    font-size: 0.9rem;
+  }
+  .wp-footer .flag { font-size: 2rem; margin-bottom: 8px; }
+  /* Print */
+  @media print {
+    body { background: #fff; color: #111; }
+    h1,h2 { color: #003087; }
+    h3 { color: #0055b3; }
+    th { background: #003087; color: #fff; }
+    code { background: #f0f0f0; color: #003087; }
+    a { color: #003087; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>$SCALONETA — Whitepaper Comunitario</h1>
+<h3>Versión 1.0 | Julio 2026</h3>
+<hr />
+<h2>1. Manifiesto</h2>
+<p>El 15 de julio de 2026, Argentina se consagró campeón del mundo por cuarta vez.</p>
+<p>Pero esta Scaloneta no es solo un equipo de fútbol. Es una forma de sentir, de vibrar, de estar juntos. Es Messi levantando la Copa. Es el Dibu atajando penales. Es millones de argentinos que, sin importar dónde estén en el mundo, lloran y abrazan a un desconocido porque compartimos algo más grande que nosotros.</p>
+<p><strong>$SCALONETA nació de esa emoción.</strong></p>
+<p>No es solo un token. Es la primera meme coin de la hinchada argentina — un pedazo de la historia del fútbol mundial, ahora on-chain y para siempre en la blockchain de Solana.</p>
+<hr />
+<h2>2. Quiénes somos</h2>
+<p>$SCALONETA es un proyecto 100% comunitario, creado por y para los hinchas argentinos.</p>
+<p>No hay fondos de inversión detrás. No hay VCs ni ballenas preasignadas. No hay equipo corporativo con traje y corbata. Hay <strong>una comunidad</strong> que ama el fútbol, cree en la tecnología descentralizada, y quiere que el mundo sepa que <strong>las Malvinas son argentinas y los campeones también</strong>.</p>
+<p>El proyecto fue lanzado el 9 de julio de 2026 — Día de la Independencia Argentina — como una declaración: este espacio también es nuestro.</p>
+<hr />
+<h2>3. El Token</h2>
+<table>
+<thead>
+<tr>
+<th>Dato</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nombre</strong></td>
+<td>Scaloneta</td>
+</tr>
+<tr>
+<td><strong>Ticker</strong></td>
+<td>$SCALONETA</td>
+</tr>
+<tr>
+<td><strong>Blockchain</strong></td>
+<td>Solana</td>
+</tr>
+<tr>
+<td><strong>Contrato (CA)</strong></td>
+<td><code>7UgKQdZw6B5efwtWxHDSaHLwh8b9B7TFKaYXfcx6pump</code></td>
+</tr>
+<tr>
+<td><strong>Supply total</strong></td>
+<td>1,000,000,000 (1 Billion)</td>
+</tr>
+<tr>
+<td><strong>Decimales</strong></td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>Plataforma de lanzamiento</strong></td>
+<td>pump.fun</td>
+</tr>
+<tr>
+<td><strong>Explorer</strong></td>
+<td>solscan.io/token/7UgKQdZw6B5efwtWxHDSaHLwh8b9B7TFKaYXfcx6pump</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>4. Tokenomics</h2>
+<h3>Distribución</h3>
+<p>$SCALONETA es un <strong>fair launch</strong> total. Eso significa:</p>
+<ul>
+<li>✅ <strong>0% pre-venta</strong> — nadie compró antes que la comunidad</li>
+<li>✅ <strong>0% asignación al equipo</strong> — los creadores compraron en el mercado abierto como todos</li>
+<li>✅ <strong>0% wallets bloqueadas</strong> — sin tokens reservados para insiders</li>
+<li>✅ <strong>100% acceso público</strong> desde el primer segundo</li>
+</ul>
+<p>Todos los 1,000,000,000 $SCALONETA entraron al mercado a través de la curva de bonding de pump.fun, donde el precio sube orgánicamente con cada compra.</p>
+<h3>Mecánica de la curva de bonding (pump.fun)</h3>
+<p>pump.fun utiliza una <strong>curva de bonding automatizada</strong> que:</p>
+<ol>
+<li>Comienza con un precio inicial muy bajo</li>
+<li>Sube el precio con cada compra (y baja con cada venta)</li>
+<li>Al alcanzar ~85 SOL en liquidez acumulada (~$13,000 USD), el token <strong>se gradúa automáticamente a Raydium</strong>, donde queda con liquidez permanente</li>
+<li>La liquidez de graduación queda <strong>bloqueada permanentemente</strong> — no puede ser retirada</li>
+</ol>
+<p>Este mecanismo elimina los rug pulls clásicos: no hay forma de que los creadores retiren la liquidez porque nunca la controlaron.</p>
+<hr />
+<h2>5. Ecosistema</h2>
+<h3>🌐 Landing — lascalonetacoin.com</h3>
+<p>El hogar digital de la comunidad. Toda la información del proyecto, links a los mercados, y acceso directo al swap.</p>
+<h3>💱 Wallet &amp; Swap — wallet.lascalonetacoin.com</h3>
+<p>Interfaz propia de swap integrada con <strong>Jupiter Terminal</strong> (el mayor agregador de liquidez de Solana). Permite comprar y vender $SCALONETA directamente desde el navegador, sin necesidad de salir al exchange.</p>
+<p>Incluye:
+- Calculadora ARS ↔ SCALONETA con precio en tiempo real
+- Guía para fondear la wallet desde Argentina (Lemon Cash, Bitso, Ripio)
+- Historial de transacciones on-chain
+- QR de pago Solana para enviar y recibir</p>
+<h3>🎨 NFT Collection — "Inmortales La Scaloneta"</h3>
+<p>100 NFTs únicos on-chain en Solana, con temática de los jugadores y momentos históricos de La Scaloneta.</p>
+<ul>
+<li><strong>Candy Machine:</strong> <code>3rjRFckTe7VzZvVrcZesQUwkgPhwm9aCUWNtchk3uq69</code></li>
+<li><strong>Marketplace:</strong> Magic Eden / Tensor</li>
+<li>Holders de NFTs forman parte del núcleo duro de la comunidad</li>
+</ul>
+<hr />
+<h2>6. ¿Por qué Solana?</h2>
+<p>Solana es la blockchain elegida por la nueva generación de proyectos comunitarios. Sus ventajas son claras:</p>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Ethereum</th>
+<th>Solana</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Velocidad</td>
+<td>~15 TPS</td>
+<td>~65,000 TPS</td>
+</tr>
+<tr>
+<td>Costo por tx</td>
+<td>$5-50 USD</td>
+<td>~$0.00025 USD</td>
+</tr>
+<tr>
+<td>Tiempo de confirmación</td>
+<td>~15 segundos</td>
+<td>~0.4 segundos</td>
+</tr>
+<tr>
+<td>Ecosistema meme coins</td>
+<td>Maduro</td>
+<td>En explosión</td>
+</tr>
+</tbody>
+</table>
+<p>pump.fun, el launchpad líder de meme coins en Solana, procesó más de $6 billones en volumen y tiene la comunidad más activa del ecosistema. Es el lugar natural para $SCALONETA.</p>
+<hr />
+<h2>7. Roadmap</h2>
+<h3>Fase 1 — Lanzamiento ✅ (Julio 2026)</h3>
+<ul>
+<li>[x] Token creado en pump.fun</li>
+<li>[x] Landing lascalonetacoin.com live</li>
+<li>[x] Wallet &amp; Swap wallet.lascalonetacoin.com live</li>
+<li>[x] 100 NFTs "Inmortales La Scaloneta" minteados on-chain</li>
+<li>[x] Redes sociales activas (Twitter, Telegram, TikTok, Instagram, YouTube)</li>
+<li>[x] Listado en GeckoTerminal</li>
+<li>[x] Solicitud a CoinGecko y CoinMarketCap enviadas</li>
+</ul>
+<h3>Fase 2 — Comunidad (Agosto–Septiembre 2026)</h3>
+<ul>
+<li>[ ] Graduación de pump.fun → Raydium (100% bonding curve)</li>
+<li>[ ] Listing en CoinMarketCap y CoinGecko</li>
+<li>[ ] Listing en DexScreener</li>
+<li>[ ] 1,000+ holders</li>
+<li>[ ] 5,000+ miembros en Telegram</li>
+<li>[ ] Campaña de marketing en redes sociales</li>
+</ul>
+<h3>Fase 3 — Expansión (Q4 2026)</h3>
+<ul>
+<li>[ ] On-ramp ARS → $SCALONETA vía MercadoPago (sin intermediarios)</li>
+<li>[ ] Listing en exchanges centralizados (CEX)</li>
+<li>[ ] Partnerships con creadores de contenido de fútbol argentino</li>
+<li>[ ] Expansión a comunidades latinas en todo el mundo</li>
+<li>[ ] Merchandise $SCALONETA</li>
+</ul>
+<h3>Fase 4 — Futuro (2027)</h3>
+<ul>
+<li>[ ] DAO comunitaria para decisiones del proyecto</li>
+<li>[ ] Fondo de buyback &amp; burn con treasury</li>
+<li>[ ] App móvil nativa</li>
+<li>[ ] Colaboraciones con la AFA o figuras del fútbol argentino</li>
+</ul>
+<hr />
+<h2>8. Comunidad</h2>
+<p>$SCALONETA es, ante todo, un movimiento de la hinchada argentina.</p>
+<h3>Canales oficiales</h3>
+<ul>
+<li>🐦 Twitter/X: <a href="https://x.com/lascalonetacoin">@lascalonetacoin</a></li>
+<li>💬 Telegram: <a href="https://t.me/scalonetacoin">t.me/scalonetacoin</a></li>
+<li>🎵 TikTok: <a href="https://tiktok.com/@lascalonetacoin">@lascalonetacoin</a></li>
+<li>📸 Instagram: <a href="https://instagram.com/lascalonetacoin">@lascalonetacoin</a></li>
+<li>📺 YouTube: <a href="https://youtube.com/@lascalonetacoin">@lascalonetacoin</a></li>
+<li>🌐 Web: <a href="https://www.lascalonetacoin.com">lascalonetacoin.com</a></li>
+</ul>
+<h3>Cómo participar</h3>
+<ol>
+<li><strong>Comprá $SCALONETA</strong> en <a href="https://wallet.lascalonetacoin.com">wallet.lascalonetacoin.com</a> o en pump.fun</li>
+<li><strong>Compartí el proyecto</strong> con amigos y en redes sociales</li>
+<li><strong>Sumáte al Telegram</strong> y participá de las decisiones comunitarias</li>
+<li><strong>Creá contenido</strong> — TikToks, memes, videos — y ayudá a que la Scaloneta llegue a todo el mundo</li>
+</ol>
+<hr />
+<h2>9. Cómo comprar $SCALONETA desde Argentina</h2>
+<ol>
+<li><strong>Descargá Phantom o Solflare</strong> (wallet de Solana para mobile o browser)</li>
+<li><strong>Comprá SOL</strong> en Lemon Cash, Bitso, Buenbit o Ripio</li>
+<li><strong>Retirá el SOL</strong> a tu wallet (red Solana)</li>
+<li><strong>Swapeá SOL por $SCALONETA</strong> en <a href="https://wallet.lascalonetacoin.com">wallet.lascalonetacoin.com</a></li>
+</ol>
+<p>Fee de swap: <strong>0%</strong> (Jupiter) | Fee de red Solana: ~$0.00025 USD</p>
+<hr />
+<h2>10. Transparencia y verificación</h2>
+<p>Todo en $SCALONETA es verificable on-chain:</p>
+<ul>
+<li><strong>Contrato:</strong> <a href="https://solscan.io/token/7UgKQdZw6B5efwtWxHDSaHLwh8b9B7TFKaYXfcx6pump">Solscan</a></li>
+<li><strong>Holders:</strong> <a href="https://solscan.io/token/7UgKQdZw6B5efwtWxHDSaHLwh8b9B7TFKaYXfcx6pump#holders">Ver en Solscan</a></li>
+<li><strong>Código fuente landing:</strong> <a href="https://github.com/innovix360-SM/scaloneta-landing">GitHub</a></li>
+<li><strong>NFT Collection:</strong> Candy Machine <code>3rjRFckTe7VzZvVrcZesQUwkgPhwm9aCUWNtchk3uq69</code></li>
+</ul>
+<hr />
+<h2>11. Disclaimer</h2>
+<p>$SCALONETA es un meme coin creado con fines comunitarios y de entretenimiento. <strong>No es una inversión.</strong> Los precios de las criptomonedas son altamente volátiles y podés perder todo el dinero que invertís.</p>
+<p>No inviertas más de lo que estés dispuesto a perder. Este documento no constituye asesoramiento financiero, legal ni fiscal.</p>
+<p>El proyecto no tiene afiliación oficial con la AFA (Asociación del Fútbol Argentino), la FIFA, ni ningún jugador o figura pública mencionada.</p>
+<hr />
+<p><em>$SCALONETA — Por la hinchada, para la hinchada. 🇦🇷</em></p>
+<p><em>lascalonetacoin.com | @lascalonetacoin</em></p>
+<div class="wp-footer">
+  <div class="flag">🇦🇷</div>
+  <p><strong>$SCALONETA</strong> — Por la hinchada, para la hinchada.</p>
+  <p><a href="https://www.lascalonetacoin.com">lascalonetacoin.com</a> | <a href="https://x.com/lascalonetacoin">@lascalonetacoin</a></p>
+</div>
+</div>
+</body>
+</html>
