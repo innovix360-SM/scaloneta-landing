@@ -1,17 +1,21 @@
 # $SCALONETA — Whitepaper Comunitario
-### Versión 1.0 | Julio 2026
+### Versión 1.1 | Julio 2026
 
 ---
 
 ## 1. Manifiesto
 
-El 15 de julio de 2026, Argentina se consagró campeón del mundo por cuarta vez.
+El 18 de diciembre de 2022, Argentina se consagró campeón del mundo en Qatar.
 
-Pero esta Scaloneta no es solo un equipo de fútbol. Es una forma de sentir, de vibrar, de estar juntos. Es Messi levantando la Copa. Es el Dibu atajando penales. Es millones de argentinos que, sin importar dónde estén en el mundo, lloran y abrazan a un desconocido porque compartimos algo más grande que nosotros.
+Messi levantó la Copa del Mundo. El Dibu Martínez se convirtió en leyenda. Y millones de argentinos, en cada rincón del planeta, lloraron de alegría abrazando a desconocidos. Fue el momento más grande del fútbol argentino en 36 años.
 
-**$SCALONETA nació de esa emoción.**
+En 2026, La Scaloneta volvió a llegar a la final del mundo. Subcampeones, sí — pero con la frente en alto, demostrando que este equipo no es un destello, sino una generación dorada que sigue escribiendo historia.
 
-No es solo un token. Es la primera meme coin de la hinchada argentina — un pedazo de la historia del fútbol mundial, ahora on-chain y para siempre en la blockchain de Solana.
+**Y el camino al 2030 ya empezó.**
+
+$SCALONETA nació de esa emoción colectiva. No es solo un token — es la primera meme coin de la hinchada argentina, un pedazo de historia celeste y blanca, ahora on-chain y para siempre en la blockchain de Solana.
+
+Estamos acá para acompañar a La Scaloneta en cada partido, en cada gol, en cada sueño — hasta que volvamos a ser campeones del mundo en 2030.
 
 ---
 
@@ -19,7 +23,7 @@ No es solo un token. Es la primera meme coin de la hinchada argentina — un ped
 
 $SCALONETA es un proyecto 100% comunitario, creado por y para los hinchas argentinos.
 
-No hay fondos de inversión detrás. No hay VCs ni ballenas preasignadas. No hay equipo corporativo con traje y corbata. Hay **una comunidad** que ama el fútbol, cree en la tecnología descentralizada, y quiere que el mundo sepa que **las Malvinas son argentinas y los campeones también**.
+No hay fondos de inversión detrás. No hay VCs ni ballenas preasignadas. No hay equipo corporativo con traje y corbata. Hay **una comunidad** que ama el fútbol, cree en la tecnología descentralizada, y quiere estar presente en cada paso que da La Scaloneta hacia el Mundial 2030.
 
 El proyecto fue lanzado el 9 de julio de 2026 — Día de la Independencia Argentina — como una declaración: este espacio también es nuestro.
 
@@ -104,7 +108,21 @@ pump.fun, el launchpad líder de meme coins en Solana, procesó más de $6 billo
 
 ---
 
-## 7. Roadmap
+## 7. La Scaloneta y el camino al 2030
+
+La historia no terminó en 2026.
+
+Argentina ganó en Qatar 2022. Llegó a la final en 2026. Y el Mundial 2030 se juega en España, Portugal, Marruecos — y con partidos inaugurales en Sudamérica, incluyendo Argentina.
+
+**$SCALONETA va a estar ahí.**
+
+Cada partido de eliminatorias, cada amistoso, cada gol de Messi o del próximo crack que surja de las inferiores — la comunidad de $SCALONETA va a celebrarlo on-chain. Queremos ser el token que acompañe a la hinchada desde hoy hasta que Argentina levante su quinta Copa del Mundo.
+
+Este no es un proyecto que nació y muere con un resultado. Es un proyecto de largo plazo, construido sobre la pasión más duradera de los argentinos: **el fútbol**.
+
+---
+
+## 8. Roadmap
 
 ### Fase 1 — Lanzamiento ✅ (Julio 2026)
 - [x] Token creado en pump.fun
@@ -113,7 +131,8 @@ pump.fun, el launchpad líder de meme coins en Solana, procesó más de $6 billo
 - [x] 100 NFTs "Inmortales La Scaloneta" minteados on-chain
 - [x] Redes sociales activas (Twitter, Telegram, TikTok, Instagram, YouTube)
 - [x] Listado en GeckoTerminal
-- [x] Solicitud a CoinGecko y CoinMarketCap enviadas
+- [x] Solicitudes a CoinGecko y CoinMarketCap enviadas
+- [x] Whitepaper comunitario publicado
 
 ### Fase 2 — Comunidad (Agosto–Septiembre 2026)
 - [ ] Graduación de pump.fun → Raydium (100% bonding curve)
@@ -121,24 +140,26 @@ pump.fun, el launchpad líder de meme coins en Solana, procesó más de $6 billo
 - [ ] Listing en DexScreener
 - [ ] 1,000+ holders
 - [ ] 5,000+ miembros en Telegram
-- [ ] Campaña de marketing en redes sociales
+- [ ] Campaña de marketing masiva en redes
 
 ### Fase 3 — Expansión (Q4 2026)
-- [ ] On-ramp ARS → $SCALONETA vía MercadoPago (sin intermediarios)
+- [ ] On-ramp ARS → $SCALONETA vía MercadoPago
 - [ ] Listing en exchanges centralizados (CEX)
 - [ ] Partnerships con creadores de contenido de fútbol argentino
 - [ ] Expansión a comunidades latinas en todo el mundo
 - [ ] Merchandise $SCALONETA
 
-### Fase 4 — Futuro (2027)
+### Fase 4 — Rumbo al 2030 (2027–2030)
 - [ ] DAO comunitaria para decisiones del proyecto
+- [ ] Activaciones especiales en cada fecha de eliminatorias
 - [ ] Fondo de buyback & burn con treasury
 - [ ] App móvil nativa
-- [ ] Colaboraciones con la AFA o figuras del fútbol argentino
+- [ ] Gran campaña de cara al Mundial 2030
+- [ ] Objetivo: ser el token oficial de la hinchada argentina en el 2030
 
 ---
 
-## 8. Comunidad
+## 9. Comunidad
 
 $SCALONETA es, ante todo, un movimiento de la hinchada argentina.
 
@@ -158,7 +179,7 @@ $SCALONETA es, ante todo, un movimiento de la hinchada argentina.
 
 ---
 
-## 9. Cómo comprar $SCALONETA desde Argentina
+## 10. Cómo comprar $SCALONETA desde Argentina
 
 1. **Descargá Phantom o Solflare** (wallet de Solana para mobile o browser)
 2. **Comprá SOL** en Lemon Cash, Bitso, Buenbit o Ripio
@@ -169,7 +190,7 @@ Fee de swap: **0%** (Jupiter) | Fee de red Solana: ~$0.00025 USD
 
 ---
 
-## 10. Transparencia y verificación
+## 11. Transparencia y verificación
 
 Todo en $SCALONETA es verificable on-chain:
 
@@ -180,7 +201,7 @@ Todo en $SCALONETA es verificable on-chain:
 
 ---
 
-## 11. Disclaimer
+## 12. Disclaimer
 
 $SCALONETA es un meme coin creado con fines comunitarios y de entretenimiento. **No es una inversión.** Los precios de las criptomonedas son altamente volátiles y podés perder todo el dinero que invertís.
 
@@ -190,6 +211,8 @@ El proyecto no tiene afiliación oficial con la AFA (Asociación del Fútbol Arg
 
 ---
 
-*$SCALONETA — Por la hinchada, para la hinchada. 🇦🇷*
+*Campeones del mundo en Qatar 2022. Finalistas en 2026. Rumbo al 2030. 🏆🇦🇷*
 
-*lascalonetacoin.com | @lascalonetacoin*
+*$SCALONETA — Por la hinchada, para la hinchada.*
+
+*[lascalonetacoin.com](https://www.lascalonetacoin.com) | [@lascalonetacoin](https://x.com/lascalonetacoin)*
