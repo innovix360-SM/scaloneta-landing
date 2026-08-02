@@ -1,0 +1,86 @@
+{
+  "name": "LaScalonetaCoin — Certificado de Autoria IP",
+  "symbol": "SCALONETA-IP",
+  "description": "Certificado de autoria y registro intelectual del proyecto LaScalonetaCoin ($SCALONETA). Este NFT constituye prueba on-chain de la creacion original del proyecto, sus activos digitales, marca visual y contenido asociado.",
+  "image": "https://gateway.pinata.cloud/ipfs/QmRvKW8FYHQJ5kpM5D9R2k9Vy1Eni7Fi9HwWFevpVBd49j/collection.png",
+  "external_url": "https://lascalonetacoin.com",
+  "attributes": [
+    {
+      "trait_type": "Tipo",
+      "value": "Certificado de Autoria IP"
+    },
+    {
+      "trait_type": "Proyecto",
+      "value": "LaScalonetaCoin"
+    },
+    {
+      "trait_type": "Token Ticker",
+      "value": "SCALONETA"
+    },
+    {
+      "trait_type": "Chain",
+      "value": "Solana"
+    },
+    {
+      "trait_type": "Contract Address",
+      "value": "7UgKQdZw6B5efwtWxHDSaHLwh8b9B7TFKaYXfcx6pump"
+    },
+    {
+      "trait_type": "Candy Machine",
+      "value": "3rjRFckTe7VzZvVrcZesQUwkgPhwm9aCUWNtchk3uq69"
+    },
+    {
+      "trait_type": "NFT Collection",
+      "value": "J4XUjs4HhFvtki1SQJ3eZMbzo4ra4prArdm6CUYJixrM"
+    },
+    {
+      "trait_type": "Creador Wallet",
+      "value": "6WgfkFwwArLArYQ3sq1hyC7yXFnBWwocbW9sRb5xzmEH"
+    },
+    {
+      "trait_type": "Website",
+      "value": "https://lascalonetacoin.com"
+    },
+    {
+      "trait_type": "Wallet App",
+      "value": "https://wallet.lascalonetacoin.com"
+    },
+    {
+      "trait_type": "Twitter",
+      "value": "@lascalonetacoin"
+    },
+    {
+      "trait_type": "Telegram",
+      "value": "@scalonetacoin"
+    },
+    {
+      "trait_type": "Supply Total",
+      "value": "1,000,000,000"
+    },
+    {
+      "trait_type": "Fecha Creacion Token",
+      "value": "2026-07-09"
+    },
+    {
+      "trait_type": "Fecha Certificado",
+      "value": "2026-08-02T14:50:22Z"
+    },
+    {
+      "trait_type": "GitHub",
+      "value": "innovix360-SM/scaloneta-landing"
+    },
+    {
+      "trait_type": "Launchpad",
+      "value": "pump.fun"
+    }
+  ],
+  "properties": {
+    "category": "image",
+    "creators": [
+      {
+        "address": "6WgfkFwwArLArYQ3sq1hyC7yXFnBWwocbW9sRb5xzmEH",
+        "share": 100
+      }
+    ]
+  }
+}
